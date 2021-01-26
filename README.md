@@ -14,13 +14,18 @@ One future goal for this is to implement bulk uploading and allow users to see t
 
 This project was bootstrapped out of create-react-app. It does not use any additional libraries.
 
-In terms of API's, the project uses
+In terms of API's, the project uses the Iggy Lookup API and the OpenCage forward geocode API to convert an address into latitude and longitude points. One interesting thing about this API which could be explored in the future is that it returns a list of possible locations. One idea was to potentially take an average of these locations or figure out some kind of radius/threshold to best put location. Since our specific use case is around a specific location, I simply take the first one
+
+Iggy's Lookup API is used. The surrounding/summary specific section isn't used but could be implement in the future.
 
 ## Instructions to get started
 
 1. Clone the repository using your favorite cloning method (ssh, HTTPS)
-2. run `yarn install (-i)` to install all libraries.
-3. run `yarn start` to get the project up and running!
+2. Run `yarn install (-i)` to install all libraries.
+3. Add your opencage and iggy api keys to a `.env` file like:
+    - `REACT_APP_IGGY_KEY=<your_key_here>`
+    - `REACT_APP_OPENCAGE_KEY=<your_key_here>`)
+4. Run `yarn start` to get the project up and running!
 
 ## Everything below comes from default and is left as a helpful reminder
 
