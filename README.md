@@ -1,6 +1,6 @@
 # Overview
 
-![Image of what the project looks like](public/img.png)
+![Image of what the project looks like](public/img1.png)
 
 This is a small project for the Iggy Take home designed to help real estate developers or architects figure out and imagine what a location looks like given
 a specific address. It has two main goals:
